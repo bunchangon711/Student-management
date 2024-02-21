@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sinh viên</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Nhập thông tin sinh viên</h1>
+            <form id="studentForm">
+                <input type="text" id="studentId" placeholder="Mã SV" required>
+                <input type="text" id="studentName" placeholder="Họ và tên" required>
+                <input type="date" id="studentBirthdate" required>
+                <input type="text" id="studentClass" placeholder="Lớp học" required>
+                <input type="number" id="studentGPA" placeholder="Điểm GPA" step="0.01" required>
+                <button type="submit">Lưu thông tin</button>
+            </form>
+        </div>
+        <div class="right">
+            <h1>Danh sách sinh viên</h1>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Mã SV</th>
+                        <th>Họ và tên</th>
+                        <th>Ngày sinh</th>
+                        <th>Lớp học</th>
+                        <th>Điểm GPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="student.js"></script>
+</body>
+</html>
